@@ -1,0 +1,79 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+                let user=[
+                    {
+                    id:1,
+                    name:"John",
+                    active:false,
+                    dept:[1,"a2","a3"],
+                    addr:{
+                        perm:"a1",
+                        temp:"a2"
+                    }
+                    },
+                    {
+                    id:2,
+                    name:"John",
+                    active:false,
+                    dept:["a1","a2","a3"],
+                    addr:{
+                        perm:"a1",
+                        temp:"a2"
+                    }
+                    },
+                    {
+                    id:3,
+                    name:"John",
+                    active:false,
+                    dept:[1,"a2","a3"],
+                    addr:{
+                        perm:"a1",
+                        temp:"a2"
+                    }
+                    }
+                ]
+                    for(let temp in user)
+                    {
+                       // console.log(user[temp]);
+                        for(let i in user[temp])
+                        {
+                            //console.log("yes");
+                            if(typeof(user[temp][i])=='object')
+                            {
+                                //console.log("yes");
+                                if(Array.isArray(user[temp][i]))
+                                {
+                                    console.log(i+":");
+                                    st=user[temp][i].toString();
+                                    st2=st.split(",");
+                                    console.log(st2.join("!"));
+                                    /*
+                                    for(let j=0;j<user[temp][i][0].length;j++)
+                                    {
+                                        console.log(user[temp][i][j]+"/");
+                                    }*/
+                                }
+                                else
+                                {
+
+                                    console.log(i+":");
+                                    for(k in user[temp][i])
+                                    {
+                                        console.log(k+":"+user[temp][i][k]);
+                                    }
+                                }
+                                
+                            }
+
+                            else
+                            console.log(i+":"+user[temp][i]);
+
+                        }
+                    }
+
+                
+        </script>
+        </body>
+</html>

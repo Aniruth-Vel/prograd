@@ -1,0 +1,34 @@
+
+.cont{
+  float:left;
+  padding: 60px; 
+  font-size: 20;
+  margin-right: auto;             
+}
+.topp{
+  padding: 20px;
+  float:left;
+}
+.mid{
+  display: flex;
+  flex-wrap: wrap;
+}
+.mid div{
+  width: 27%;
+  padding: 10px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 20px;
+
+}
+.row3{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightblue;
+
+}
+.row3 div{
+  width: 45%;
+  padding: 10px;
+  
+}
